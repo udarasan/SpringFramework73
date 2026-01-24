@@ -4,16 +4,18 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Girl implements Agreement, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean, ApplicationContextAware {
-    public Girl(){
-        System.out.println("Girl object created");
+@Primary
+public class GirlOne implements Agreement, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean, ApplicationContextAware {
+    public GirlOne(){
+        System.out.println("GirlOne object created");
     }
     @Override
     public void chat() {
-        System.out.println("Girl Chat");
+        System.out.println("Girl One Chat");
     }
 
     @Override

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/02_Spring_Bean_LifeCycle/pom.xml" />
         <option value="$PROJECT_DIR$/03_Dependancy_Injection/pom.xml" />
         <option value="$PROJECT_DIR$/04_FullMode_VS_LightMode/pom.xml" />
+        <option value="$PROJECT_DIR$/05_Configurations/pom.xml" />
       </list>
     </option>
   </component>

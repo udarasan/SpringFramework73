@@ -1,18 +1,14 @@
-package org.example.config;
+package org.example.bean;
 
-import org.example.bean.SpringBeanOne;
-import org.example.bean.SpringBeanTwo;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
-@ComponentScan(basePackages = "org.example.bean")
-public class AppConfig {
-    //Full mode
-    /*@Bean
+@Component
+public class SpringBeanThree {
+    //light mode
+    @Bean
     public SpringBeanOne springBeanOne(){
-        //inter-bean dependency
+        //inter-bean dependency - not satisfied
         SpringBeanTwo springBeanTwo1 = springBeanTwo();
         SpringBeanTwo springBeanTwo2 = springBeanTwo();
         System.out.println(springBeanTwo1);
@@ -22,5 +18,5 @@ public class AppConfig {
     @Bean
     public SpringBeanTwo springBeanTwo(){
         return new SpringBeanTwo();
-    }*/
+    }
 }

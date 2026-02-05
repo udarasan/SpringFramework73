@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -18,7 +19,7 @@
 </div>
 
 <div class="container p-3">
-    <button id="addCustomer" class="btn btn-primary">Add Customer</button>
+    <button id="addCustomer" class="btn btn-primary" onclick="saveCustomer()">Add Customer</button>
     <button id="updateCustomer" class="btn btn-secondary">Update Customer</button>
     <button id="deleteCustomer" class="btn btn-danger">Delete Customer</button>
 </div>
@@ -41,6 +42,6 @@
         </tbody>
     </table>
 </div>
-
+<script src="../js/customer.js"></script>
 </body>
 </html>

@@ -2,8 +2,7 @@ package org.example.backend.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.example.backend.dto.CustomerDTO;
-import org.example.backend.service.CustomerService;
-import org.example.backend.service.CustomerServiceImpl;
+import org.example.backend.service.custom.CustomerService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

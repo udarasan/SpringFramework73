@@ -1,4 +1,4 @@
-package org.example.backend.service;
+package org.example.backend.service.custom;
 
 import org.example.backend.dto.CustomerDTO;
 

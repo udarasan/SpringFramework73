@@ -1,6 +1,7 @@
-package org.example.backend.service;
+package org.example.backend.service.custom.impl;
 
 import org.example.backend.dto.CustomerDTO;
+import org.example.backend.service.custom.CustomerService;
 import org.springframework.stereotype.Service;
 
 @Service

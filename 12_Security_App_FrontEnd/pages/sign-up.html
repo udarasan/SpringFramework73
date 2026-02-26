@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
     <title>Title</title>
 </head>
 <body>
-
+<div>
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button id="signup">signUp</button>
+</div>
+<script>
+    $('#signup').click(function () {
+        let username=$('#username').val
+        let password=$('#password').val
+        $.ajax({
+            url:'http://localhost:8080/api/v1/auth/signup',
+            method:'POST',
+            contentType:'application/json',
+            data:JSON.stringify({
+                username:username,
+                password:password,
+                role:"USER"
+            }),
+            success:function (res) {
+                if (res===200){
+                    alert("successfully signed-up")
+                }else {
+                 alert(res.data)
+                }
+            },
+            error:function (err) {
+                console.log(err)
+            }
+        })
+    });
+</script>
 </body>
 </html>
